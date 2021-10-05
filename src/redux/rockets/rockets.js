@@ -1,11 +1,28 @@
 import { GET_ROCKETS, GET_SUCCESS, GET_ERR } from '../slices/rocketSlice';
 
+const RESERVE_ROCKET = 'rockets/rockets/RESERVE_ROCKET';
+
 const initialState = {
   rockets: [],
 };
 
+const reserveRocket = (payload) => ({
+  type: RESERVE_ROCKET,
+  payload,
+});
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case RESERVE_ROCKET:
+    {
+      const TrackRocket = state.rockets.map((rocket) => {
+        if (rocket.id !== Number(action.payload)) {
+          return rocket;
+        }
+        return { ...rocket, reserved: !rocket.reserved };
+      });
+      return { ...state, rockets: TrackRocket };
+    }
     case GET_ROCKETS:
       return { ...state, pending: true };
     case GET_SUCCESS:
@@ -32,3 +49,4 @@ const reducer = (state = initialState, action) => {
 };
 
 export default reducer;
+export { reserveRocket };
