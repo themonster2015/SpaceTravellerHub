@@ -32,11 +32,10 @@
 
 - GitHub: [@themonster2015](https://github.com/themonster2015)
 
-👤 **Author2**
+👤 **Daniel M. Matongo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mmatongo](https://github.com/mmatongo)
+- LinkedIn: [Daniel M. Matongo](https://linkedin.com/in/mmatongo)
 
 
 ## 🤝 Contributing
