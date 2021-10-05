@@ -8,6 +8,7 @@ import Rockets from './components/rockets/Rockets';
 import pullRockets from './redux/slices/rocketSlice';
 import Missions from './components/missions/Missions';
 import { displayMissions } from './redux/missions/missions';
+import Profile from './components/profile/Profile';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,9 @@ const App = () => {
           <Route path="/missions">
             <Missions />
           </Route>
-          <Route path="/profile" />
+          <Route path="/profile">
+            <Profile />
+          </Route>
         </Switch>
       </Router>
     </div>
