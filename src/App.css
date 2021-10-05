@@ -122,3 +122,29 @@ th {
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
 }
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-container > div {
+  width: 40%;
+}
+
+.reserved-section {
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+}
+
+.reserved {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 20px 0 40px 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.reserved:nth-last-child(1) {
+  border: none;
+}
