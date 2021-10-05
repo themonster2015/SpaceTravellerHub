@@ -6,12 +6,15 @@ import Nav from './components/Nav';
 import './App.css';
 import Rockets from './components/rockets/Rockets';
 import pullRockets from './redux/slices/rocketSlice';
+import Missions from './components/missions/Missions';
+import { displayMissions } from './redux/missions/missions';
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(async () => {
     dispatch(pullRockets());
+    dispatch(displayMissions());
   });
 
   return (
@@ -25,7 +28,9 @@ const App = () => {
           <Route exact path="/">
             <Rockets />
           </Route>
-          <Route path="/missions" />
+          <Route path="/missions">
+            <Missions />
+          </Route>
           <Route path="/profile" />
         </Switch>
       </Router>
