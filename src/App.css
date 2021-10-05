@@ -1,4 +1,4 @@
-.App {
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,4 +22,54 @@ a {
   display: flex;
   gap: 10px;
   margin-right: 40px;
+}
+
+.container {
+  display: flex;
+  margin: 20px 40px 0 40px;
+}
+
+.image {
+  margin: 10px;
+  width: 350px;
+}
+
+.panel {
+  width: 100%;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.notification {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 5px;
+  background-color: #18a2b8;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #18a2b8;
+}
+
+.cancel {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #6d757d;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #6d757d;
+}
+
+.reserve {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
 }
