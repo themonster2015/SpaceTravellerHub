@@ -3,7 +3,16 @@
 
 > The Space Travelers' Hub is a web application for a company that provides commercial and scientific space travel services. It works directly with real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.
 
-![screenshot](./app_screenshot.png)
+## Screenshots
+<p>
+  <img src="./src/imgs/1.png" alt="Space Travelers Hub" width="700px" />
+</p>
+<p>
+  <img src="./src/imgs/2.png" alt="Space Travelers Hub" width="700px" />
+</p>
+<p>
+  <img src="./src/imgs/3.png" alt="Space Travelers Hub" width="700px" />
+</p>
 
 
 ## Built With
@@ -11,10 +20,11 @@
 - React
 - Redux
 - CSS
+- Jest
 
 ## Live Demo
 
-[Live Demo Link](https://www.example.com)
+[Live Demo Link](https://dazzling-feynman-4f0073.netlify.app)
 
 ## Getting Started
 
@@ -47,3 +57,6 @@ Feel free to check the [issues page](https://github.com/themonster2015/SpaceTrav
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+
+This project is [MIT](./MIT.md) licensed.
