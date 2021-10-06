@@ -7,7 +7,9 @@ export default function Missions() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(displayMissions());
+    if (missions.length === 0) {
+      dispatch(displayMissions());
+    }
   }, []);
 
   const handleClick = (id, type) => {
