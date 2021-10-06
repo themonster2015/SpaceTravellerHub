@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test that all components are rendering just fine. Render the Missions page. 1`] = `
+<div
+  className="container"
+>
+  <table>
+    <thead>
+      <tr>
+        <th
+          className="mTitle"
+        >
+          Mission
+        </th>
+        <th
+          className="mDes"
+        >
+          Description
+        </th>
+        <th
+          className="mStatus"
+        >
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Test that all components are rendering just fine. Render the Nav 1`] = `
+<nav>
+  <div
+    className="nav-items"
+  >
+    <a
+      aria-current="page"
+      className="selected"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Rockets
+    </a>
+    <a
+      aria-current={null}
+      href="/missions"
+      onClick={[Function]}
+    >
+      Missions
+    </a>
+    <a
+      aria-current={null}
+      href="/profile"
+      onClick={[Function]}
+    >
+      My Profile
+    </a>
+  </div>
+</nav>
+`;
+
+exports[`Test that all components are rendering just fine. Render the Profile Page 1`] = `
+<div
+  className="main-container"
+>
+  <div
+    className="missions-section"
+  >
+    <h2>
+      My Missions
+    </h2>
+  </div>
+  <div
+    className="rockets-section"
+  >
+    <h2>
+      My Rockets
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`Test that all components are rendering just fine. Render the Rockets Page. 1`] = `null`;
