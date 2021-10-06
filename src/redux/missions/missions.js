@@ -4,6 +4,7 @@ const api = 'https://api.spacexdata.com/v3/missions';
 
 const DISPLAY_MISSIONS = 'missionStore/missions/DISPLAY_MISSIONS';
 const JOIN_MISSION = 'missionStore/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'missionStore/missions/LEAVE_MISSION';
 
 export const displayMissions = () => (dispatch) => {
   fetch(api)
@@ -30,6 +31,11 @@ export const joinMission = (payload) => ({
   payload,
 });
 
+export const leaveMission = (payload) => ({
+  type: LEAVE_MISSION,
+  payload,
+});
+
 const missionReducer = (state = initialState, action) => {
   switch (action.type) {
     case DISPLAY_MISSIONS:
@@ -37,11 +43,17 @@ const missionReducer = (state = initialState, action) => {
     case JOIN_MISSION:
       return state.map((mission) => {
         if (mission.mission_id === action.payload) {
-          return { ...mission, reserved: !mission.reserved };
+          return { ...mission, reserved: true };
         }
         return mission;
       });
-
+    case LEAVE_MISSION:
+      return state.map((mission) => {
+        if (mission.mission_id === action.payload) {
+          return { ...mission, reserved: false };
+        }
+        return mission;
+      });
     default:
       return state;
   }

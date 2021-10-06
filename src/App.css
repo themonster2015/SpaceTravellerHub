@@ -154,7 +154,7 @@ th {
 .inActive {
   color: white;
   padding: 5px 10px 5px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .Active {
@@ -163,4 +163,20 @@ th {
 
 .inActive {
   background-color: grey;
+}
+
+.joinBtn,
+.leaveBtn {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.joinBtn {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.leaveBtn {
+  color: red;
+  border: 1px solid red;
 }
