@@ -104,6 +104,7 @@ th {
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: bolder;
+  background-color: lightgrey;
 }
 
 .mName {
@@ -147,4 +148,35 @@ th {
 
 .reserved:nth-last-child(1) {
   border: none;
+}
+
+.Active,
+.inActive {
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.Active {
+  background-color: lightskyblue;
+}
+
+.inActive {
+  background-color: grey;
+}
+
+.joinBtn,
+.leaveBtn {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.joinBtn {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.leaveBtn {
+  color: red;
+  border: 1px solid red;
 }
